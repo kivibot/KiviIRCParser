@@ -4,8 +4,6 @@
  */
 package fi.kivibot.irc.event;
 
-import fi.kivibot.irc.IRCEvent;
-
 /**
  *
  * @author kivi
@@ -31,5 +29,12 @@ public class UserEvent extends IRCEvent {
 
     public String getChannel() {
         return trg;
+    }
+
+    @Override
+    public String toString() {
+        return "[UserEvent server:" + getServer() + ", sernder-nick:" 
+                + getSenderNick() + ", sender-host:" + getSenderHost() 
+                + ", channel:" + getChannel() + "]";
     }
 }

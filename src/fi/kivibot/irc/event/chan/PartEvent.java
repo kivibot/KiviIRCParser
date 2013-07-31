@@ -22,4 +22,11 @@ public class PartEvent extends UserEvent {
     public String getMessage(){
         return this.message;
     }
+    
+    @Override
+    public String toString() {
+        return "[PartEvent server:" + getServer() + ", sernder-nick:" 
+                + getSenderNick() + ", sender-host:" + getSenderHost() 
+                + ", channel:" + getChannel() + ", message:+"+getMessage()+"]";
+    }
 }

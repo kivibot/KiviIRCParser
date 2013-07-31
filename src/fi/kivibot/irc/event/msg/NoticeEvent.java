@@ -13,4 +13,11 @@ public class NoticeEvent extends PrivmsgEvent {
     public NoticeEvent(String server, String sender_nick, String sender_host, String target, String msg) {
         super(server, sender_nick, sender_host, target, msg);
     }
+    
+    @Override
+    public String toString() {
+        return "[NoticeEvent server:" + getServer() + ", sernder-nick:" 
+                + getSenderNick() + ", sender-host:" + getSenderHost() 
+                + ", channel:" + getChannel() + ", message:"+getMessage()+"]";
+    }
 }

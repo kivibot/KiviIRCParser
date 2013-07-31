@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package fi.kivibot.irc;
+package fi.kivibot.irc.event;
 
 /**
  *
@@ -17,6 +17,11 @@ public class IRCEvent {
     
     public String getServer(){
         return server;
+    }
+    
+    @Override
+    public String toString(){
+        return "[IRCEvent server:"+getServer()+"]";
     }
     
 }

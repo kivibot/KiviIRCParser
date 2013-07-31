@@ -8,10 +8,14 @@ package fi.kivibot.irc.event.server;
  *
  * @author kivi
  */
-public class WallopsEvent extends PingEvent{
-    
-    public WallopsEvent(String message){
-        super(message);
+public class WallopsEvent extends PingEvent {
+
+    public WallopsEvent(String s, String message) {
+        super(s, message);
     }
     
+    @Override
+    public String toString(){
+        return "[WallopsEvent server:"+getServer()+", message:"+getMessage()+"]";
+    }
 }

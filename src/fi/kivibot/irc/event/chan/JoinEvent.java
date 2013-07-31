@@ -15,4 +15,11 @@ public class JoinEvent extends UserEvent {
     public JoinEvent(String server, String sender_nick, String sender_host, String target) {
         super(server, sender_nick, sender_host, target);
     }
+    
+    @Override
+    public String toString() {
+        return "[JoinEvent server:" + getServer() + ", sernder-nick:" 
+                + getSenderNick() + ", sender-host:" + getSenderHost() 
+                + ", channel:" + getChannel() + "]";
+    }
 }

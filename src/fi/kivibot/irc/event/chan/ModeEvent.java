@@ -27,4 +27,11 @@ public class ModeEvent extends UserEvent{
     public String getMode(){
         return this.mode;
     }
+    
+    @Override
+    public String toString() {
+        return "[ModeEvent server:" + getServer() + ", sernder-nick:" 
+                + getSenderNick() + ", sender-host:" + getSenderHost() 
+                + ", channel:" + getChannel() + ", target:"+getTarget()+", mode:"+getMode()+"]";
+    }
 }

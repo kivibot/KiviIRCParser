@@ -27,4 +27,11 @@ public class CtcpEvent extends UserEvent {
     public String getArgument() {
         return arg;
     }
+    
+    @Override
+    public String toString() {
+        return "[CtcpEvent server:" + getServer() + ", sernder-nick:" 
+                + getSenderNick() + ", sender-host:" + getSenderHost() 
+                + ", channel:" + getChannel() + ", command:"+getCommand()+", arg:"+getArgument()+"]";
+    }
 }

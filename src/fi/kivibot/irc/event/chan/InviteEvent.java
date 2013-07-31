@@ -22,4 +22,11 @@ public class InviteEvent extends UserEvent {
     public String getTarget() {
         return this.target;
     }
+    
+    @Override
+    public String toString() {
+        return "[InviteEvent server:" + getServer() + ", sernder-nick:" 
+                + getSenderNick() + ", sender-host:" + getSenderHost() 
+                + ", channel:" + getChannel() + ", target:"+getTarget()+"]";
+    }
 }

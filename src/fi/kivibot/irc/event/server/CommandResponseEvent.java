@@ -4,11 +4,13 @@
  */
 package fi.kivibot.irc.event.server;
 
+import fi.kivibot.irc.event.IRCEvent;
+
 /**
  *
  * @author kivi
  */
-public class CommandResponseEvent {
+public class CommandResponseEvent extends IRCEvent{
     //***STATIC PART***
     //RPL
     public static final int RPL_WELCOME = 001;
@@ -152,18 +154,34 @@ public class CommandResponseEvent {
     //*****************
             
     private int id;
-    private String arg;
+    private String[] args;
 
-    public CommandResponseEvent(int id, String s) {
+    public CommandResponseEvent(String server, int id, String[] s) {
+        super(server);
         this.id = id;
-        this.arg = s;
+        this.args = s;
     }
 
     public int getID() {
         return id;
     }
 
-    public String getArgument() {
-        return this.arg;
+    public String[] getArguments() {
+        return this.args;
+    }
+    
+    @Override
+    public String toString() {
+        return "[CommandResponseEvent server:" + getServer() + ", id:" 
+                + getID() + ", args:" + a2s(getArguments()) + "]";
+    }
+    
+    private String a2s(String[] a){
+        String s = "{";
+        for(int i=0; i<a.length-1; i++){
+            s += a[i]+", ";
+        }
+        s += a[a.length-1]+"}";
+        return s;
     }
 }

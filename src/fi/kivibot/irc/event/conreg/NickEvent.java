@@ -4,7 +4,7 @@
  */
 package fi.kivibot.irc.event.conreg;
 
-import fi.kivibot.irc.IRCEvent;
+import fi.kivibot.irc.event.IRCEvent;
 
 /**
  *
@@ -23,5 +23,20 @@ public class NickEvent extends IRCEvent {
 
     public String getNewNick() {
         return this.trg;
+    }
+    
+    public String getSenderNick() {
+        return snick;
+    }
+
+    public String getSenderHost() {
+        return shost;
+    }
+    
+    @Override
+    public String toString() {
+        return "[NickEvent server:" + getServer() + ", sernder-nick:" 
+                + getSenderNick() + ", sender-host:" + getSenderHost() 
+                + ", newNick:" + getNewNick() + "]";
     }
 }
