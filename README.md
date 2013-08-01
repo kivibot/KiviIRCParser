@@ -1,4 +1,4 @@
 KiviIRCParser
 =============
 
-Parses messages sent to client by server.
+Parses messages sent to the client by the server.
