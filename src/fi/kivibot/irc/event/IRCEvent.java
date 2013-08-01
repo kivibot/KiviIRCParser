@@ -8,19 +8,19 @@ package fi.kivibot.irc.event;
  * @author Nicklas Ahlskog (kivi@kivibot.fi)
  */
 public class IRCEvent {
+
     private String server;
-    
-    public IRCEvent(String server){
+
+    public IRCEvent(String server) {
         this.server = server;
     }
-    
-    public String getServer(){
+
+    public String getServer() {
         return server;
     }
-    
+
     @Override
-    public String toString(){
-        return "[IRCEvent server:"+getServer()+"]";
+    public String toString() {
+        return "[IRCEvent server:" + getServer() + "]";
     }
-    
 }

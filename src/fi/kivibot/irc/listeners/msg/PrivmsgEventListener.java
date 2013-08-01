@@ -13,5 +13,4 @@ import fi.kivibot.irc.listeners.IRCEventListener;
 public interface PrivmsgEventListener extends IRCEventListener {
 
     public void onPrivmsgEvent(PrivmsgEvent pe);
-    
 }

@@ -32,8 +32,8 @@ public class UserEvent extends IRCEvent {
 
     @Override
     public String toString() {
-        return "[UserEvent server:" + getServer() + ", sender-nick:" 
-                + getSenderNick() + ", sender-host:" + getSenderHost() 
+        return "[UserEvent server:" + getServer() + ", sender-nick:"
+                + getSenderNick() + ", sender-host:" + getSenderHost()
                 + ", channel:" + getChannel() + "]";
     }
 }

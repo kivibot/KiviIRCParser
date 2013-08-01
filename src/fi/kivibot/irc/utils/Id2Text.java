@@ -26,8 +26,8 @@ public class Id2Text {
             }
         }
     }
-    
-    public static String getResponseName(int id){
+
+    public static String getResponseName(int id) {
         return ht.get(Integer.valueOf(id));
     }
 }

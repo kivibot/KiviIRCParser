@@ -13,5 +13,4 @@ import fi.kivibot.irc.listeners.IRCEventListener;
 public interface CtcpEventListener extends IRCEventListener {
 
     public void onCtcpEvent(CtcpEvent ce);
-    
 }

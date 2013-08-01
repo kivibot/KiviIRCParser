@@ -10,6 +10,7 @@ import fi.kivibot.irc.listeners.IRCEventListener;
  *
  * @author Nicklas Ahlskog (kivi@kivibot.fi)
  */
-public interface InviteEventListener extends IRCEventListener{
+public interface InviteEventListener extends IRCEventListener {
+
     public void onInviteEvent(InviteEvent ie);
 }

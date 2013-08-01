@@ -9,7 +9,7 @@ import fi.kivibot.irc.event.IRCEvent;
  *
  * @author Nicklas Ahlskog (kivi@kivibot.fi)
  */
-public class PingEvent extends IRCEvent{
+public class PingEvent extends IRCEvent {
 
     private String msg;
 
@@ -21,9 +21,9 @@ public class PingEvent extends IRCEvent{
     public String getMessage() {
         return msg;
     }
-    
+
     @Override
-    public String toString(){
-        return "[PingEvent server:"+getServer()+", message:"+getMessage()+"]";
+    public String toString() {
+        return "[PingEvent server:" + getServer() + ", message:" + getMessage() + "]";
     }
 }

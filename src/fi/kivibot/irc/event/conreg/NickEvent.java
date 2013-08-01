@@ -23,7 +23,7 @@ public class NickEvent extends IRCEvent {
     public String getNewNick() {
         return this.trg;
     }
-    
+
     public String getSenderNick() {
         return snick;
     }
@@ -31,11 +31,11 @@ public class NickEvent extends IRCEvent {
     public String getSenderHost() {
         return shost;
     }
-    
+
     @Override
     public String toString() {
-        return "[NickEvent server:" + getServer() + ", sender-nick:" 
-                + getSenderNick() + ", sender-host:" + getSenderHost() 
+        return "[NickEvent server:" + getServer() + ", sender-nick:"
+                + getSenderNick() + ", sender-host:" + getSenderHost()
                 + ", newNick:" + getNewNick() + "]";
     }
 }

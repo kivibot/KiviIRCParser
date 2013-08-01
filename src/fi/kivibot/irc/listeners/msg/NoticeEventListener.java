@@ -13,5 +13,4 @@ import fi.kivibot.irc.listeners.IRCEventListener;
 public interface NoticeEventListener extends IRCEventListener {
 
     public void onNoticeEvent(NoticeEvent ne);
-    
 }

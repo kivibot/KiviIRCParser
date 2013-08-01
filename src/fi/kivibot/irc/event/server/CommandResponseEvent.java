@@ -10,9 +10,10 @@ import fi.kivibot.irc.utils.Id2Text;
  *
  * @author Nicklas Ahlskog (kivi@kivibot.fi)
  */
-public class CommandResponseEvent extends IRCEvent{
+public class CommandResponseEvent extends IRCEvent {
     //***STATIC PART***
     //RPL
+
     public static final int RPL_WELCOME = 001;
     public static final int RPL_YOURHOST = 002;
     public static final int RPL_CREATED = 003;
@@ -152,7 +153,6 @@ public class CommandResponseEvent extends IRCEvent{
     public static final int ERR_UMODEUNKNOWNFLAGS = 501;
     public static final int ERR_USERSDONTMATCH = 502;
     //*****************
-            
     private int id;
     private String[] args;
 
@@ -169,19 +169,19 @@ public class CommandResponseEvent extends IRCEvent{
     public String[] getArguments() {
         return this.args;
     }
-    
+
     @Override
     public String toString() {
-        return "[CommandResponseEvent server:" + getServer() + ", id:" 
-                + getID() + ", explanation:"+Id2Text.getResponseName(getID())+", args:" + a2s(getArguments()) + "]";
+        return "[CommandResponseEvent server:" + getServer() + ", id:"
+                + getID() + ", explanation:" + Id2Text.getResponseName(getID()) + ", args:" + a2s(getArguments()) + "]";
     }
-    
-    private String a2s(String[] a){
+
+    private String a2s(String[] a) {
         String s = "{";
-        for(int i=0; i<a.length-1; i++){
-            s += a[i]+", ";
+        for (int i = 0; i < a.length - 1; i++) {
+            s += a[i] + ", ";
         }
-        s += a[a.length-1]+"}";
+        s += a[a.length - 1] + "}";
         return s;
     }
 }

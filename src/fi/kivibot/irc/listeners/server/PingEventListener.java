@@ -13,5 +13,4 @@ import fi.kivibot.irc.listeners.IRCEventListener;
 public interface PingEventListener extends IRCEventListener {
 
     public void onPingEvent(PingEvent pe);
-    
 }

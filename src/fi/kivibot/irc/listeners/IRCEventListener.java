@@ -10,5 +10,6 @@ import fi.kivibot.irc.event.IRCEvent;
  * @author Nicklas Ahlskog (kivi@kivibot.fi)
  */
 public interface IRCEventListener {
+
     public void onIRCEvent(IRCEvent e);
 }

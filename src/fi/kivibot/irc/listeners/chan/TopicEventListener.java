@@ -13,5 +13,4 @@ import fi.kivibot.irc.listeners.IRCEventListener;
 public interface TopicEventListener extends IRCEventListener {
 
     public void onTopicEvent(TopicEvent te);
-    
 }

@@ -13,5 +13,4 @@ import fi.kivibot.irc.listeners.IRCEventListener;
 public interface CommandResponseEventListener extends IRCEventListener {
 
     public void onCommandResponseEvent(CommandResponseEvent ce);
-    
 }

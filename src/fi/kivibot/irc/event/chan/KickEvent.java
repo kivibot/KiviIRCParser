@@ -26,11 +26,11 @@ public class KickEvent extends UserEvent {
     public String getTarget() {
         return this.trg;
     }
-    
+
     @Override
     public String toString() {
-        return "[KickEvent server:" + getServer() + ", sender-nick:" 
-                + getSenderNick() + ", sender-host:" + getSenderHost() 
-                + ", channel:" + getChannel() + ", target:"+getTarget()+", message:"+getMessage()+"]";
+        return "[KickEvent server:" + getServer() + ", sender-nick:"
+                + getSenderNick() + ", sender-host:" + getSenderHost()
+                + ", channel:" + getChannel() + ", target:" + getTarget() + ", message:" + getMessage() + "]";
     }
 }

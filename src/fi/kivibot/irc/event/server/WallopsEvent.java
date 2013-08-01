@@ -12,9 +12,9 @@ public class WallopsEvent extends PingEvent {
     public WallopsEvent(String s, String message) {
         super(s, message);
     }
-    
+
     @Override
-    public String toString(){
-        return "[WallopsEvent server:"+getServer()+", message:"+getMessage()+"]";
+    public String toString() {
+        return "[WallopsEvent server:" + getServer() + ", message:" + getMessage() + "]";
     }
 }

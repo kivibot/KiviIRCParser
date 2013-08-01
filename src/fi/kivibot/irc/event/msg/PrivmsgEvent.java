@@ -21,11 +21,11 @@ public class PrivmsgEvent extends UserEvent {
     public String getMessage() {
         return msg;
     }
-    
+
     @Override
     public String toString() {
-        return "[PrivmsgEvent server:" + getServer() + ", sender-nick:" 
-                + getSenderNick() + ", sender-host:" + getSenderHost() 
-                + ", channel:" + getChannel() + ", message:"+getMessage()+"]";
+        return "[PrivmsgEvent server:" + getServer() + ", sender-nick:"
+                + getSenderNick() + ", sender-host:" + getSenderHost()
+                + ", channel:" + getChannel() + ", message:" + getMessage() + "]";
     }
 }
