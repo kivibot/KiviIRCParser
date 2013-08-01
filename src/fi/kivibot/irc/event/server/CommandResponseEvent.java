@@ -1,14 +1,14 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 package fi.kivibot.irc.event.server;
 
 import fi.kivibot.irc.event.IRCEvent;
+import fi.kivibot.irc.utils.Id2Text;
 
 /**
  *
- * @author kivi
+ * @author Nicklas Ahlskog (kivi@kivibot.fi)
  */
 public class CommandResponseEvent extends IRCEvent{
     //***STATIC PART***
@@ -173,7 +173,7 @@ public class CommandResponseEvent extends IRCEvent{
     @Override
     public String toString() {
         return "[CommandResponseEvent server:" + getServer() + ", id:" 
-                + getID() + ", args:" + a2s(getArguments()) + "]";
+                + getID() + ", explanation:"+Id2Text.getResponseName(getID())+", args:" + a2s(getArguments()) + "]";
     }
     
     private String a2s(String[] a){

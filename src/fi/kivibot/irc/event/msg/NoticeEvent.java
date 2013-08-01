@@ -1,12 +1,11 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 package fi.kivibot.irc.event.msg;
 
 /**
  *
- * @author kivi
+ * @author Nicklas Ahlskog (kivi@kivibot.fi)
  */
 public class NoticeEvent extends PrivmsgEvent {
 
@@ -16,7 +15,7 @@ public class NoticeEvent extends PrivmsgEvent {
     
     @Override
     public String toString() {
-        return "[NoticeEvent server:" + getServer() + ", sernder-nick:" 
+        return "[NoticeEvent server:" + getServer() + ", sender-nick:" 
                 + getSenderNick() + ", sender-host:" + getSenderHost() 
                 + ", channel:" + getChannel() + ", message:"+getMessage()+"]";
     }

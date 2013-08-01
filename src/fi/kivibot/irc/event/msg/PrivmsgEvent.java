@@ -1,14 +1,13 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 package fi.kivibot.irc.event.msg;
 
 import fi.kivibot.irc.event.UserEvent;
 
 /**
  *
- * @author kivi
+ * @author Nicklas Ahlskog (kivi@kivibot.fi)
  */
 public class PrivmsgEvent extends UserEvent {
 
@@ -25,7 +24,7 @@ public class PrivmsgEvent extends UserEvent {
     
     @Override
     public String toString() {
-        return "[PrivmsgEvent server:" + getServer() + ", sernder-nick:" 
+        return "[PrivmsgEvent server:" + getServer() + ", sender-nick:" 
                 + getSenderNick() + ", sender-host:" + getSenderHost() 
                 + ", channel:" + getChannel() + ", message:"+getMessage()+"]";
     }
